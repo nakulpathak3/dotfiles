@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/nakulpathak/src/se465/a3/shared/itext/src/main'
+let g:netrw_dirhist_2='/Users/nakulpathak/src/se465/a3/shared/itext/src'
+let g:netrw_dirhist_3='/Users/nakulpathak/src/se465/a3/shared/itext/src/main'
+let g:netrw_dirhist_4='/Users/nakulpathak/src/se465/a3/shared/itext/src/main/java'
+let g:netrw_dirhist_5='/Users/nakulpathak/src/se465/a3/shared/itext/src/main/java/com'
+let g:netrw_dirhist_6='/Users/nakulpathak/src/se465/a3/shared/itext/src/main/java/com/itextpdf'
+let g:netrw_dirhist_7='/Users/nakulpathak/src/se465/a3/shared/itext/src/main/java/com/itextpdf/text'
+let g:netrw_dirhist_8='/Users/nakulpathak/src/se465/a3/shared/itext/src/test/java/com/itextpdf/text'
+let g:netrw_dirhist_9='/Users/nakulpathak/src/se465/a3/shared/itext/src/test/java/com/itextpdf/text/pdf'

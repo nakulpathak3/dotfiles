@@ -1,36 +1,28 @@
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/nakul/.oh-my-zsh
-
-# Optionally, if you set this to "random", it'll load a random theme each
-ZSH_THEME="3den"
-export TERM="xterm-256color"
-
-# if you do a 'rm *', Zsh will give you a sanity check!
-setopt RM_STAR_WAIT
-
-# allows you to type Bash style comments on your command line
-setopt interactivecomments
-
-# Zsh has a spelling corrector
-setopt CORRECT
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to enable command auto-correction.
+export ZSH=/Users/nakulpathak/.oh-my-zsh
+ZSH_THEME="gianu"
+export blog_password=blogtest
 ENABLE_CORRECTION="true"
 
-plugins=(git rails rvm)
-
-# User configuration
-export PATH="/home/nakul/.rvm/gems/ruby-2.3.0@myapp/bin:/home/nakul/.rvm/gems/ruby-2.3.0@global/bin:/home/nakul/.rvm/rubies/ruby-2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/nakul/.rvm/bin:/home/nakul/.rvm/bin"
+export PATH="/opt/local/bin:/opt/local/sbin:/Users/nakulpathak/.rvm/gems/ruby-2.2.0/bin:/Users/nakulpathak/.rvm/gems/ruby-2.2.0@global/bin:/Users/nakulpathak/.rvm/rubies/ruby-2.2.0/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/Current/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/texbin:/Users/nakulpathak/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export EDITOR="vim"
-export USE_EDITOR=$EDITOR
-export VISUAL=$EDITOR
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.oh-my-zsh/lib/alias.zsh
+export EDITOR='vim'
+
+alias zshconfig="subl ~/.zshrc"
+alias envconfig="subl ~/Projects/config/env.sh"
+
+alias code="cd Documents/Code/"
+alias proj="cd Documents/Code/Projects"
+alias website="cd Documents/Code/Projects/Websites"
+alias gpom="git push origin master"
+alias gpos="git push origin start"
+alias gap="git add -p"
+alias vi="vim"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=/usr/local/bin:$PATH
