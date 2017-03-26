@@ -18,7 +18,6 @@ set backspace=indent,eol,start
 
 let mapleader = "\<Space>"
 :imap jj <Esc>
-:imap , <Esc>
 
 " Save using space w
 nnoremap <Leader>w :w<CR>
