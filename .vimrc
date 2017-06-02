@@ -17,7 +17,7 @@ set smartcase
 set backspace=indent,eol,start
 
 let mapleader = "\<Space>"
-:imap jj <Esc>
+" :imap jj <Esc>
 
 " Save using space w
 nnoremap <Leader>w :w<CR>
@@ -40,10 +40,13 @@ map <left> <nop>
 map <right> <nop>
 
 " Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
+
+" Can't open file for writing shortcut
+cmap w!! %!sudo tee
 
 if has('persistent_undo')
   set undofile
@@ -64,3 +67,7 @@ Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
+au BufReadPost Jenkinsfile set syntax=groovy
+au BufReadPost Jenkinsfile set filetype=groovy
+
+colorscheme gruvbox
